@@ -1,0 +1,24 @@
+<!--component html goes here -->
+<div class="table-bordered">
+
+<table class="table">
+    <thead class="thread-inverse" >
+        <tr>
+            <td>Product Name</td>
+            <td>Description</td>
+            <td>Cost</td>
+        </tr>
+
+    </thead> 
+<tbody>
+    <tr *ngFor="let prod of allproducts">
+        <td>{{prod.name}}</td>
+        <td>{{prod.description}}</td>
+        <td>{{prod.cost}}</td>
+    </tr>
+
+</tbody>
+</table>
+
+</div>
+
